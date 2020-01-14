@@ -1,0 +1,7 @@
+{
+  "name": "Manawa",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
