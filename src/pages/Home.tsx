@@ -1,15 +1,9 @@
-import {
-  IonContent,
-  IonHeader,
-  IonPage,
-  IonTitle,
-  IonToolbar
-} from "@ionic/react";
-import React from "react";
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import React from 'react';
 
 const Home = ({ thing }: { thing?: string }) => {
-  if (thing == undefined) {
-    thing = "oyster";
+  if (thing === undefined) {
+    thing = 'oyster';
   }
   return (
     <IonPage>
@@ -21,14 +15,10 @@ const Home = ({ thing }: { thing?: string }) => {
       <IonContent className="ion-padding">
         The world is your {thing}.
         <p>
-          If you get lost, the{" "}
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://ionicframework.com/docs/"
-          >
+          If you get lost, the{' '}
+          <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/">
             docs
-          </a>{" "}
+          </a>{' '}
           will be your guide.
         </p>
       </IonContent>
