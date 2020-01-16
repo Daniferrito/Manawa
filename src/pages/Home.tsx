@@ -2,7 +2,7 @@ import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/rea
 import React from 'react';
 
 const Home = ({ thing }: { thing?: string }) => {
-  if (thing == undefined) {
+  if (thing === undefined) {
     thing = 'oyster';
   }
   return (
