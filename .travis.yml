@@ -1,0 +1,19 @@
+sudo: false
+
+language: node_js
+node_js:
+  - 12
+
+env:
+  - CI=true
+
+script:
+  -  npm run lint
+  -  npm run test:coverage
+  -  npm run build
+
+scripts:
+  - npm install codecov -g
+  
+after_success:
+  - codecov
