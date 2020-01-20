@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders without crashing 1`] = `
+<ForwardRef(IonCard)
+  className="subElement"
+>
+  Write report
+  <br />
+  1/20/2020
+</ForwardRef(IonCard)>
+`;
+
+exports[`renders without crashing2 1`] = `
+<Fragment>
+  Error
+</Fragment>
+`;

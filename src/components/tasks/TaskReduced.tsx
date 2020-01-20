@@ -1,13 +1,16 @@
 import React from 'react';
 import Task from '../../types/Task';
-import '../categories/CategoriesList.css';
 import { IonCard } from '@ionic/react';
 
 interface TaskReducedProps {
-  task: Task;
+  task?: Task;
 }
 
-const TaskReduced = ({ task }: TaskReducedProps) => {
+const TaskReduced = (props: TaskReducedProps) => {
+  const { task } = props;
+
+  if (task === undefined) return <>{'Error'}</>;
+
   return (
     <IonCard className="subElement">
       {task.title}

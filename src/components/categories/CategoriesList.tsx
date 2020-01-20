@@ -2,17 +2,24 @@ import React from 'react';
 import Category from '../../types/Category';
 import CategoriesListItem from './CategoriesListItem';
 
-interface CategoriesListProps {
-  categories: Category[];
+import ExampleData from '../../dummies/ExampleData.json';
+import MainData from '../../types/MainData';
+
+interface Props {
+  categories?: Category[];
 }
 
-const CategoriesList = ({ categories }: CategoriesListProps) => {
+const CategoriesList = (props: Props) => {
+  const { categories = MainData.fromJson(ExampleData).categories } = props;
+
+  // if (categories === undefined) return <>{'Error'}</>;
+
   return (
-    <div>
+    <>
       {categories.map(category => (
         <CategoriesListItem key={category.title} category={category} />
       ))}
-    </div>
+    </>
   );
 };
 

@@ -44,6 +44,9 @@
     "extends": "react-app"
   },
   "jest": {
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
     "collectCoverageFrom": [
       "**/*.{js,jsx,ts,tsx}",
       "!**/*.d.ts",
@@ -75,7 +78,12 @@
   },
   "devDependencies": {
     "@capacitor/cli": "1.4.0",
+    "@types/enzyme": "^3.10.4",
+    "@types/enzyme-adapter-react-16": "^1.0.5",
     "@types/react-test-renderer": "^16.9.1",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "enzyme-to-json": "^3.4.3",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.9.0",
     "eslint-plugin-prettier": "^3.1.2",
