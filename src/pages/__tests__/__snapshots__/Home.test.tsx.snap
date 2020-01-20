@@ -12,7 +12,8 @@ exports[`matches the snapshots 1`] = `
     </ion-toolbar>
   </ion-header>
   <ion-content>
-    The world is your 
+    The world is your
+     
     oyster
     .
     <p>
@@ -44,7 +45,8 @@ exports[`matches the snapshots 2`] = `
     </ion-toolbar>
   </ion-header>
   <ion-content>
-    The world is your 
+    The world is your
+     
     place
     .
     <p>
