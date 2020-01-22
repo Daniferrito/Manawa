@@ -7,7 +7,6 @@ import CategoriesList from '../components/categories/CategoriesList';
 test('renders without crashing', () => {
   const wrapper = shallow(<App />);
   expect(wrapper).toBeDefined();
-  expect(wrapper).toMatchSnapshot();
 });
 
 test('redirects correctly', () => {
@@ -26,5 +25,5 @@ test('redirects correctly 2', () => {
     </MemoryRouter>
   );
   // expect(wrapper.find(CategoriesList)).toHaveLength(1);
-  expect(wrapper).toMatchSnapshot();
+  expect(wrapper).toBeDefined();
 });
