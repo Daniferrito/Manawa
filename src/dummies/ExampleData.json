@@ -1,0 +1,29 @@
+{
+    "categories": [
+        {
+            "title": "Work",
+            "tasks": [
+                {
+                    "title": "Write report",
+                    "description": "This is a description",
+                    "expirationDate": "2020-01-20T12:00:00Z"
+                },
+                {
+                    "title": "Meeting with stakeholders",
+                    "description": "This is a description",
+                    "expirationDate": "2020-01-21T12:00:00Z"
+                }
+            ]
+        },
+        {
+            "title": "Personal",
+            "tasks": [
+                {
+                    "title": "Buy food",
+                    "description": "Fill the fridge",
+                    "expirationDate": "2020-01-24T18:00:00Z"
+                }
+            ]
+        }
+    ]
+}

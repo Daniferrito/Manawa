@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders without crashing 1`] = `
+<Fragment>
+  <CategoriesListItem
+    category={
+      Category {
+        "tasks": Array [
+          Task {
+            "description": "This is a description",
+            "expirationDate": 2020-01-20T12:00:00.000Z,
+            "title": "Write report",
+          },
+          Task {
+            "description": "This is a description",
+            "expirationDate": 2020-01-21T12:00:00.000Z,
+            "title": "Meeting with stakeholders",
+          },
+        ],
+        "title": "Work",
+      }
+    }
+    key="Work"
+  />
+  <CategoriesListItem
+    category={
+      Category {
+        "tasks": Array [
+          Task {
+            "description": "Fill the fridge",
+            "expirationDate": 2020-01-24T18:00:00.000Z,
+            "title": "Buy food",
+          },
+        ],
+        "title": "Personal",
+      }
+    }
+    key="Personal"
+  />
+</Fragment>
+`;
+
+exports[`renders without crashing2 1`] = `
+<Fragment>
+  <CategoriesListItem
+    category={
+      Category {
+        "tasks": Array [
+          Task {
+            "description": "This is a description",
+            "expirationDate": 2020-01-20T12:00:00.000Z,
+            "title": "Write report",
+          },
+          Task {
+            "description": "This is a description",
+            "expirationDate": 2020-01-21T12:00:00.000Z,
+            "title": "Meeting with stakeholders",
+          },
+        ],
+        "title": "Work",
+      }
+    }
+    key="Work"
+  />
+  <CategoriesListItem
+    category={
+      Category {
+        "tasks": Array [
+          Task {
+            "description": "Fill the fridge",
+            "expirationDate": 2020-01-24T18:00:00.000Z,
+            "title": "Buy food",
+          },
+        ],
+        "title": "Personal",
+      }
+    }
+    key="Personal"
+  />
+</Fragment>
+`;

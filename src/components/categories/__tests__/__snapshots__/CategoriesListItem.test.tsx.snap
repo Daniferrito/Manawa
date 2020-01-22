@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders without crashing 1`] = `
+<ForwardRef(IonCard)
+  className="container"
+>
+  <p
+    className="title"
+  >
+    Work
+  </p>
+  <TaskReduced
+    key="Write report"
+    task={
+      Task {
+        "description": "This is a description",
+        "expirationDate": 2020-01-20T12:00:00.000Z,
+        "title": "Write report",
+      }
+    }
+  />
+  <TaskReduced
+    key="Meeting with stakeholders"
+    task={
+      Task {
+        "description": "This is a description",
+        "expirationDate": 2020-01-21T12:00:00.000Z,
+        "title": "Meeting with stakeholders",
+      }
+    }
+  />
+</ForwardRef(IonCard)>
+`;
+
+exports[`renders without crashing2 1`] = `
+<Fragment>
+  Error
+</Fragment>
+`;
