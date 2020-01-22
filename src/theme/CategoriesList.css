@@ -1,0 +1,13 @@
+.container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.title{
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+
+.subElement{
+    grid-column: auto;
+}

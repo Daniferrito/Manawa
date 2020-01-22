@@ -2,7 +2,7 @@ import React, { Suspense } from 'react';
 import { Redirect, Route } from 'react-router-dom';
 import { IonApp, IonRouterOutlet } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import Home from './pages/Home';
+import CategoriesList from './components/categories/CategoriesList';
 import Loader from './components/miscellaneous/Loader';
 
 /* Core CSS required for Ionic components to work properly */
@@ -23,14 +23,15 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import './theme/CategoriesList.css';
 
 const App: React.FC = () => (
   <Suspense fallback={<Loader />}>
     <IonApp>
       <IonReactRouter>
         <IonRouterOutlet>
-          <Route path="/home" component={Home} exact />
-          <Route exact path="/" render={() => <Redirect to="/home" />} />
+          <Route path="/home" component={CategoriesList} />
+          <Route exact path="/" component={() => <Redirect to="/home" />} />
         </IonRouterOutlet>
       </IonReactRouter>
     </IonApp>
